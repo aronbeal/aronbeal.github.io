@@ -3843,7 +3843,7 @@ define("resume/templates/index", ["exports"], function (exports) {
       meta: {
         "fragmentReason": {
           "name": "missing-wrapper",
-          "problems": ["multiple-nodes", "wrong-type"]
+          "problems": ["multiple-nodes"]
         },
         "revision": "Ember@2.2.0",
         "loc": {
@@ -3868,23 +3868,23 @@ define("resume/templates/index", ["exports"], function (exports) {
         var el1 = dom.createTextNode("	");
         dom.appendChild(el0, el1);
         var el1 = dom.createElement("h1");
-        var el2 = dom.createTextNode("Under construction...");
+        var el2 = dom.createTextNode("Hello world");
         dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
+        var el1 = dom.createTextNode("\n	");
         dom.appendChild(el0, el1);
-        var el1 = dom.createComment("");
+        var el1 = dom.createElement("p");
+        var el2 = dom.createTextNode("I'm a web developer with a focus on front-end work, whose primary experience has been in PHP and Drupal. This site is meant to be a repository of problems and solutions I've discovered while working in both worlds, as well as a working demonstration of technologies I'm currently interested in and experiments in the same. I sincerely hope that it is useful to others along the way, as I've gleaned a lot of knowledge over the years from folks who took the time to answer questions in a searchable format, and I'd like to be able to reciprocate.");
+        dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         var el1 = dom.createTextNode("\n");
         dom.appendChild(el0, el1);
         return el0;
       },
-      buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
-        var morphs = new Array(1);
-        morphs[0] = dom.createMorphAt(fragment, 3, 3, contextualElement);
-        return morphs;
+      buildRenderNodes: function buildRenderNodes() {
+        return [];
       },
-      statements: [["content", "outlet", ["loc", [null, [2, 0], [2, 10]]]]],
+      statements: [],
       locals: [],
       templates: []
     };
