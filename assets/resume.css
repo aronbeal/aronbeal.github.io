@@ -2985,6 +2985,10 @@ h1 {
 
 #blog #blog-posts {
   background-color: white; }
+  #blog #blog-posts ul {
+    list-style-type: auto; }
+    #blog #blog-posts ul li {
+      list-style-position: inside; }
   #blog #blog-posts h1, #blog #blog-posts h2, #blog #blog-posts h3, #blog #blog-posts h4, #blog #blog-posts h5, #blog #blog-posts h6 {
     margin-bottom: 1em;
     margin-top: 1em; }
