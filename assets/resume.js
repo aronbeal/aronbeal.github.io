@@ -3882,8 +3882,7 @@ define("resume/templates/index", ["exports"], function (exports) {
     return {
       meta: {
         "fragmentReason": {
-          "name": "missing-wrapper",
-          "problems": ["multiple-nodes"]
+          "name": "triple-curlies"
         },
         "revision": "Ember@2.2.0",
         "loc": {
@@ -3893,8 +3892,8 @@ define("resume/templates/index", ["exports"], function (exports) {
             "column": 0
           },
           "end": {
-            "line": 3,
-            "column": 0
+            "line": 5,
+            "column": 7
           }
         },
         "moduleName": "resume/templates/index.hbs"
@@ -3907,17 +3906,49 @@ define("resume/templates/index", ["exports"], function (exports) {
         var el0 = dom.createDocumentFragment();
         var el1 = dom.createTextNode("	");
         dom.appendChild(el0, el1);
-        var el1 = dom.createElement("h1");
-        var el2 = dom.createTextNode("Hello world");
+        var el1 = dom.createElement("div");
+        dom.setAttribute(el1, "id", "index");
+        var el2 = dom.createTextNode("\n	");
         dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n	");
-        dom.appendChild(el0, el1);
-        var el1 = dom.createElement("p");
-        var el2 = dom.createTextNode("I'm a web developer with a focus on front-end work, whose primary experience has been in PHP and Drupal. This site is meant to be a repository of problems and solutions I've discovered while working in both worlds, as well as a working demonstration of technologies I'm currently interested in and experiments in the same. I sincerely hope that it is useful to others along the way, as I've gleaned a lot of knowledge over the years from folks who took the time to answer questions in a searchable format, and I'd like to be able to reciprocate.");
+        var el2 = dom.createElement("h1");
+        var el3 = dom.createTextNode("Hello world");
+        dom.appendChild(el2, el3);
         dom.appendChild(el1, el2);
-        dom.appendChild(el0, el1);
-        var el1 = dom.createTextNode("\n");
+        var el2 = dom.createTextNode("\n	");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("p");
+        var el3 = dom.createTextNode("I'm a web developer with a focus on front-end work, whose primary experience has been in PHP and Drupal. This site is meant to be a repository of problems and solutions I've discovered while working in both worlds, as well as a working demonstration of technologies I'm currently interested in and experiments in the same. I sincerely hope that it is useful to others along the way, as I've gleaned a lot of knowledge over the years from folks who took the time to answer questions in a searchable format, and I'd like to be able to reciprocate.");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n	");
+        dom.appendChild(el1, el2);
+        var el2 = dom.createElement("p");
+        var el3 = dom.createTextNode("This blog is built using ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("a");
+        dom.setAttribute(el3, "href", "http://emberjs.com/");
+        var el4 = dom.createTextNode("Ember");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode(", currently version 2.2.  The goal was to build a portfolio platform that relied on third party services for its functionality.  The blog portion utilizes the ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("a");
+        dom.setAttribute(el3, "href", "https://developer.wordpress.com/docs/api/");
+        var el4 = dom.createTextNode("Wordpress.com ");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode(" site for post storage, and its REST API to populate the contents here.  The videos are hosted on youtube, using their ");
+        dom.appendChild(el2, el3);
+        var el3 = dom.createElement("a");
+        dom.setAttribute(el3, "href", "https://developers.google.com/youtube/");
+        var el4 = dom.createTextNode("developer platform");
+        dom.appendChild(el3, el4);
+        dom.appendChild(el2, el3);
+        var el3 = dom.createTextNode(".");
+        dom.appendChild(el2, el3);
+        dom.appendChild(el1, el2);
+        var el2 = dom.createTextNode("\n	");
+        dom.appendChild(el1, el2);
         dom.appendChild(el0, el1);
         return el0;
       },
