@@ -2311,6 +2311,46 @@ define("resume/templates/blog/index", ["exports"], function (exports) {
             "loc": {
               "source": null,
               "start": {
+                "line": 4,
+                "column": 32
+              },
+              "end": {
+                "line": 4,
+                "column": 75
+              }
+            },
+            "moduleName": "resume/templates/blog/index.hbs"
+          },
+          isEmpty: false,
+          arity: 0,
+          cachedFragment: null,
+          hasRendered: false,
+          buildFragment: function buildFragment(dom) {
+            var el0 = dom.createDocumentFragment();
+            var el1 = dom.createComment("");
+            dom.appendChild(el0, el1);
+            return el0;
+          },
+          buildRenderNodes: function buildRenderNodes(dom, fragment, contextualElement) {
+            var morphs = new Array(1);
+            morphs[0] = dom.createMorphAt(fragment, 0, 0, contextualElement);
+            dom.insertBoundary(fragment, 0);
+            dom.insertBoundary(fragment, null);
+            return morphs;
+          },
+          statements: [["content", "item.title", ["loc", [null, [4, 61], [4, 75]]]]],
+          locals: [],
+          templates: []
+        };
+      })();
+      var child1 = (function () {
+        return {
+          meta: {
+            "fragmentReason": false,
+            "revision": "Ember@2.2.0",
+            "loc": {
+              "source": null,
+              "start": {
                 "line": 6,
                 "column": 4
               },
@@ -2397,9 +2437,9 @@ define("resume/templates/blog/index", ["exports"], function (exports) {
           morphs[2] = dom.createMorphAt(element0, 5, 5);
           return morphs;
         },
-        statements: [["content", "item.title", ["loc", [null, [4, 32], [4, 46]]]], ["inline", "code-highlighter", [["get", "item.excerpt", ["loc", [null, [5, 55], [5, 67]]]]], [], ["loc", [null, [5, 35], [5, 70]]]], ["block", "link-to", ["blog.post", ["get", "item", ["loc", [null, [6, 27], [6, 31]]]]], [], 0, null, ["loc", [null, [6, 4], [6, 54]]]]],
+        statements: [["block", "link-to", ["blog.post", ["get", "item", ["loc", [null, [4, 55], [4, 59]]]]], [], 0, null, ["loc", [null, [4, 32], [4, 87]]]], ["inline", "code-highlighter", [["get", "item.excerpt", ["loc", [null, [5, 55], [5, 67]]]]], [], ["loc", [null, [5, 35], [5, 70]]]], ["block", "link-to", ["blog.post", ["get", "item", ["loc", [null, [6, 27], [6, 31]]]]], [], 1, null, ["loc", [null, [6, 4], [6, 54]]]]],
         locals: ["item"],
-        templates: [child0]
+        templates: [child0, child1]
       };
     })();
     return {
